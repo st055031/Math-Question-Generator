@@ -78,7 +78,7 @@ export const analyzeMathProblems = async (base64Image: string): Promise<Analysis
   `;
 
   const response = await ai.models.generateContent({
-    model: 'gemini-3-pro-preview',
+    model: 'gemini-1.5-flash',
     contents: [
       {
         parts: [
