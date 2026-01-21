@@ -78,7 +78,7 @@ export const analyzeMathProblems = async (base64Image: string): Promise<Analysis
   `;
 
   const response = await ai.models.generateContent({
-    model: 'gemini-1.5-flash',
+    model: 'gemini-1.5-flash-001',
     contents: [
       {
         parts: [
@@ -105,7 +105,7 @@ export const generateProblemImage = async (prompt: string): Promise<string | und
     const finalPrompt = `Professional mathematical diagram for a school exam, black and white ink style, high contrast, clean white background, sharp lines, clear text labels. Diagram description: ${prompt}`;
     
     const response = await ai.models.generateContent({
-      model: 'gemini-1.5-flash',
+      model: 'gemini-1.5-flash-001',
       contents: [{ parts: [{ text: finalPrompt }] }],
       config: {
         imageConfig: { 
