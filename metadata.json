@@ -1,0 +1,7 @@
+{
+  "name": "數學題目變體生成器",
+  "description": "上傳數學題目圖片，自動識別並生成相似的變體題目與解答。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
